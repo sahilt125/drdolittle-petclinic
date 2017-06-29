@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /service/target/drdolittle-petclinic-1.5.2.war
+  - source: /
     destination: /usr/share/tomcat7/webapps/
 hooks:
   AfterInstall:
