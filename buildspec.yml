@@ -4,11 +4,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - cd service
+      - cd /service
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn test
+      - mvn package
 artifacts:
   files:
     - service/target/drdolittle-petclinic-1.5.2.war
