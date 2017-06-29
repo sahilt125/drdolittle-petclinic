@@ -7,7 +7,7 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/drdolittle-petclinic-1.5.2.war
+    - service/target/drdolittle-petclinic-1.5.2.war
     - appspec.yml
     - codedeploy/*
 discard-paths: yes
