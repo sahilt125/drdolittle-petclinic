@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /target/drdolittle-petclinic-1.5.2.war
+    destination: /usr/share/tomcat7/webapps/
+hooks:
+  AfterInstall:
+    - location: codedeploy/restartTomcat.sh
+      timeout: 300
+      runas: root
