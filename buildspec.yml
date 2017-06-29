@@ -4,6 +4,10 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - cd service
+  post_build:
+    commands:
+      - echo Build completed on `date`
       - mvn package
 artifacts:
   files:
